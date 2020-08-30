@@ -18,7 +18,6 @@ a:hover {
   text-decoration: none;
 }
 
-
 #contact {
   margin-top: 18em;
 }
@@ -184,7 +183,7 @@ a:hover {
 }
 #slider {
   top: 55%;
-  transform: translateY(-50%);
+  /* transform: translateY(-100%); */
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -192,14 +191,11 @@ a:hover {
 
 #slider li {
   float: left;
-  margin: 0px 55px;
+  margin: 0px 10px;
   white-space: nowrap;
 }
 
-hr {
-  margin: 0px auto;
-  margin-bottom: 2px;
-}
+
 
 /* Payment Count down */
 .modal-content {
