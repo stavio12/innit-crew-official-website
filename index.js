@@ -2,17 +2,11 @@ $(function () {
   var scroll = new SmoothScroll('a[href*="#"]');
 });
 
-(function ($) {
-  $(document).ready(function () {
-    $(".carousel").carousel({
-      pause: "hover",
-    });
-  });
-})(jQuery);
+
 
 // Slider
 
-$(document).ready(function () {
+$(function () {
   var noOfProduct = $("#main ul li").length;
   var totalProductWidth = 0;
   for (var i = 0; i < noOfProduct; i++) {
