@@ -1,0 +1,252 @@
+body {
+  background: rgb(240, 240, 240);
+  background: linear-gradient(90deg, rgba(240, 240, 240, 0.8071428400461748) 100%, rgba(255, 255, 255, 1) 100%);
+
+  font-family: "Roboto", sans-serif;
+}
+
+#home {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3981792546120011) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%), url("./gorl.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 80vh;
+}
+
+#contact {
+  margin-top: 18em;
+}
+
+.carousel {
+  width: 640px;
+  height: 360px;
+}
+
+.logo {
+  width: 3em;
+}
+
+.fa {
+  color: #c8b732;
+  font-size: 30px;
+}
+
+.nav-link {
+  color: whitesmoke;
+}
+
+.nav-link:hover {
+  color: #c8b732;
+}
+
+.donate {
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+#donate {
+  background: none;
+}
+
+#donate:hover {
+  background-color: #c8b732;
+}
+
+.event-image:hover {
+  cursor: pointer;
+}
+
+.btn {
+  border: 2px solid #c8b732;
+  background-color: #c8b732;
+  border-radius: 15px;
+  height: 2.5em;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #c8b732;
+  color: white;
+}
+
+.donate:hover {
+  color: whitesmoke;
+}
+
+.card-img-top {
+  width: 50px;
+}
+
+.card {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text {
+  width: 10px;
+}
+.socials .fa {
+  font-size: 2em;
+  padding: 5px;
+  color: white;
+}
+
+.socials .fa:hover {
+  font-size: 2.5em;
+}
+
+.events:hover {
+  font-size: large;
+}
+
+/* Css for background */
+
+.edge--top--reverse {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.edge--top--reverse:before,
+.edge--top--reverse:after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.edge--top--reverse:before {
+  top: 0;
+  -webkit-transform: skewY(-1.5deg);
+  transform: skewY(-1.5deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.edge--top--reverse:after {
+  bottom: 0;
+  -webkit-transform: skewY(1.5deg);
+  transform: skewY(1.5deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.-blue {
+  background: rgb(222, 206, 83);
+}
+
+.edge--both {
+  position: relative;
+  z-index: 1;
+}
+.edge--both:before,
+.edge--both:after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.edge--both:before {
+  top: 0;
+  -webkit-transform: skewY(1.5deg);
+  transform: skewY(1.5deg);
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+.edge--both:after {
+  bottom: 0;
+  -webkit-transform: skewY(-1.5deg);
+  transform: skewY(-1.5deg);
+  -webkit-transform-origin: 100%;
+  transform-origin: 100%;
+}
+
+.-orange {
+  background: rgb(222, 206, 83);
+}
+
+#main {
+  /* height: 80%; */
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+#slider {
+  top: 55%;
+  transform: translateY(-50%);
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#slider li {
+  float: left;
+  margin: 0px 55px;
+  white-space: nowrap;
+}
+
+hr {
+  margin: 0px auto;
+  margin-bottom: 2px;
+}
+
+/* Payment Count down */
+.modal-content {
+  background: #000 !important;
+}
+
+#wait-list {
+  display: none;
+  margin-top: 40px;
+}
+
+#container {
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: white;
+}
+#container h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  margin: 0px;
+}
+#count {
+  margin: 40px;
+}
+#countd {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 2px solid;
+  margin: 0 30px;
+  font-size: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#countd span {
+  display: block;
+  font-size: 26px;
+  margin-top: 14px;
+}
+#span {
+  background-image: linear-gradient(to right, #33ccff, #00ff99 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#notify {
+  width: 140px;
+  margin-top: 30px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #33ccff, #00ff99 100%);
+}

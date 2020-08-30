@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="./Logo.jpg" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-db.js"></script>
+
+        <link rel="stylesheet" href="index.css" />
+    <title>Innit Crew | It's A push</title>
+  </head>
+  <body  data-spy="scroll" data-target="#navScrollspy">
+
+    <section id="home">
+      
+      <nav class="navbar navbar-expand-lg  p-5">
+        <a class="navbar-brand d-none d-sm-block" href="#">
+          <img class="logo" src="./Logo.jpg" alt="Innit Crew" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      
+          <span class="navbar-toggler-icon toggle ">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse  ml-5" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-md-center text-center text-sm-center" id="navScollspy">
+            <li class="nav-item ml-5 active">
+              <a class="nav-link ml-3" href="#">
+                Home <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item ml-5">
+              <a class="nav-link ml-3 " href="#mission">
+                Mission
+              </a>
+            </li>
+            <li class="nav-item ml-5">
+              <a class="nav-link ml-3" href="#about">
+                About Us
+              </a>
+            </li>
+            <li class="nav-item ml-5">
+              <a class="nav-link ml-3" href="#event">
+                Events
+              </a>
+            </li>
+            <li class="nav-item ml-5">
+              <a class="nav-link ml-3" href="#contact">
+                Contact Us
+              </a>
+            </li>
+            <button id="donate" class="btn btn-lg nav-item ml-5" data-toggle="modal" data-target="#exampleModal">
+              <a class="nav-link ml-3 donate" href="#" tabindex="-1" aria-disabled="true">
+                Donate
+              </a>
+            </button>
+          </ul>
+        </div>
+      </nav>
+  
+      <div class="message text-center text-white">
+        <h1>Give a Hand To Make</h1>
+        <h2>The World Better</h2>
+        <p class="font-weight-lighter">but I must explain to you how all this mistaken idea of 
+          denouncing pleasure and prasing pain was born and <br/> I will give you a complete acccount of the system</p>
+          <button  class="btn nav-item ml-5 " tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#exampleModal">
+              <span class=" ml-3 donate" >
+                Donate
+              </span>
+            </button>
+      </div>
+    </section>
+<!-- Payment Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollabl modal-xl">
+                <div class="modal-content border border-secondary">
+          <div class="modal-header">
+            <h5 class="modal-title text-white">Help thousands of children to get their primary education</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="container">
+              <h1>We're <span id="span">Getting Ready</span><br />to Lauch Donation Payment</h1>
+        
+              <div id="count">
+                <div id="countd">
+                  <span id="days">00</span>
+                  DAYS
+                </div>
+                <div id="countd">
+                  <span id="hours">00</span>
+                  HOURS
+                </div>
+                <div id="countd">
+                  <span id="minutes">00</span>
+                  MINUTES
+                </div>
+        
+                <div id="countd">
+                  <span id="seconds">00</span>
+                  SECONDS
+                </div>
+              </div>
+              <button id="notify" class="notifyBtn">
+                Notify Me
+                </button>
+                <div id="wait-list" class="embed-responsive embed-responsive-16by9">
+                  <iframe  class="embed-responsive-item"  src="https://docs.google.com/forms/d/e/1FAIpQLSfBgVZ9jPnOZ8L0wSkynAa6FIETE7hdAH541_cJ5-D8MMnTqg/viewform?embedded=true" width="640" height="673" frameborder="0" marginheight="0" marginwidth="0">
+                  </iframe>        
+                    </div> 
+          </div>
+               </div>
+          <div class="modal-footer">
+            <button type="button" id="notify" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <section id="mission" class="container p-5 mb-5">
+    <div class="container">
+    <div class="mission text-center ">
+      <h2>Our Mission</h2>
+      <p class="font-weight-lighter">
+        Our Mission is to work towards empowering the needy 
+        and vulnerable children through provision of services 
+        such as Education, Love and all necessary child needs in daily
+        lives in order to return hope and build a better future for children.
+      </p>
+
+      <h5 class="p-3">We need your help to change the world!</h5>
+    </div>
+    <div class="row ">
+     
+
+      <div class="col-12 col-md-4">
+        <div class="card text-center border-info">
+          
+          <img src="./volunteer.png " class="card-img-top mx-auto pt-3 " alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Help & Support</h5>
+        <p class="card-text pb-5">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+       <div id="btn">     <a target="_blank" href="https://forms.gle/woVRXzchu7ymVHkt8">
+        <span class="btn btn-block"> 
+          Join US </span> </a>
+         </div>  
+      </div>
+        </div>
+        </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card text-center border-warning">
+          <img src="./volunteer.png" class="card-img-top mx-auto pt-3 " alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Become a Volunteer</h5>
+            <p class="card-text pb-5">Join your hand with us for a better life and beautiful future</p>
+           <div id="btn" class="pt-5" > 
+             <a target="_blank" href="https://forms.gle/JR14fZZRasBnpasCA">
+             <span class="btn btn-block"> Register </span>
+            </a>
+          </div>
+
+          </div>
+        </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+        <div class="card text-center border-success">
+          <img src="./donate.png" class="card-img-top mx-auto pt-3 " alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Give Donation</h5>
+            <p class="card-text pb-5">Help thousands of children to get their primary education</p>
+            <div id="btn" class="pt-5" data-toggle="modal" data-target="#exampleModal">    <span class="btn btn-block"> Donate </span> </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about" class="block -blue edge--top--reverse p-5 mb-5">
+    <div  class="text-center text-white">
+
+      <h1>Hi, We're Innit Crew.</h1>
+      <p class="font-weight-lighter">
+        <strong>Innit Crew</strong> is a group of youths with the motive of empowering the
+        youth in educating programs, entertaining and helping each other
+        <br />
+        as our hall mark to add value to the society.
+      </p>
+
+
+      <h1>What is Innit?</h1>
+      <p class="font-weight-lighter">
+        The word Innit stands for positive impacts. This resulted in having the slogan It's A Push and You On Top
+        <br />
+        It's a push because we always aim to motivate one another to aim higher so you can be on top.
+      </p>
+    
+      <p class="font-weight-lighter">
+      Our Annual Event is a charity outreach to wherever help is needed based on nominated places.
+      Vision is to be known worldwide for the positive impact on youths and society as a whole.
+       Core Values Respect, TeamWork, Enthusiam, Positiveness
+       </p>
+      <p class="font-weight-lighter">
+        We brand ourselves with the name innit attached to our names across all social media.
+        This is to isolate our brand and be a title holder of the name INNIT.
+        <br />
+        Add yours now to be a proud Innitblood!.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="event" class="pb-5">
+    <h1 class="text-center">Events</h1>
+    <div class=" container">
+      <div class="row text-center">
+
+        <div class="col-12 col-md-4">
+          <a class="events" target="_blank"  href="https://photos.app.goo.gl/NaHEKBEc21RBPK8k6" >
+          <figure class="figure">
+            <img src="./group.jpg" class="figure-img img-fluid rounded" alt="Annual Reachouts" />
+            <figcaption class="figure-caption">Annual Reachouts</figcaption>
+          </figure>
+        </a>
+
+        </div>
+
+        <div class="col-12 col-md-4">
+          <a class="events" target="_blank"  href="https://photos.app.goo.gl/r4jqA5bFMFj7fP2q8">
+          <figure class="figure">
+            <img src="./home.jpg" class="figure-img img-fluid rounded" alt="Street Feedings" />
+            <figcaption class="figure-caption">Street Feedings</figcaption>
+          </figure>
+        </a>
+
+        </div>
+
+        <div class="col-12 col-md-4">
+          <a class="events" target="_blank"  href="https://photos.app.goo.gl/vhkMRoVgoFVGsJYi9">
+
+          <figure class="figure">
+            <img src="./DSC_0725.jpg" class="figure-img img-fluid rounded" alt="Meetings/Hangouts" />
+            <figcaption class="figure-caption">Meetings/Hangouts</figcaption>
+          </figure>
+        </a>
+
+        </div>
+
+        <div class="col-12">
+        
+
+        <div class="pt-5"  id="main">
+          <ul  id="slider">
+            <li>
+               
+              <img class="rounded" src="/donate1.JPG" height="250px" />
+          </li>
+                
+              <li>
+                
+                  <img class="rounded" src="./DSC_0726.jpg" height="250px" />
+              </li>
+              <li>
+               
+                <img class="rounded" src="/donate2.jpg" height="250px" />
+            </li>
+              <li>
+             
+                  <img class="rounded" src="street.JPG" height="250px" />
+              </li>
+              <li>
+                
+                  <img class="rounded" src="./group.jpg" height="250px" />
+              </li>
+              <li>
+               
+                <img class="rounded" src="/donate4.jpg" height="250px" />
+            </li>
+              <li>
+            
+                  <img class="rounded" src="domate5.jpg" height="250px" />
+              </li>
+              <li>
+               
+                  <img class="rounded" src="/kids 1.jpg" height="250px" />
+              </li>
+              <li>
+               
+                <img class="rounded" src="/give.JPG" height="250px" />
+            </li>
+              <li>
+               
+                  <img class="rounded" src="/kids 2.jpg" height="250px" />
+              </li>
+                    <li>
+               
+                  <img class="rounded" src="/donate2.jpg" height="250px" />
+              </li>
+          </ul>
+      </div>
+    
+
+
+        </div>
+
+      </div>      
+    </div>
+
+
+    </section>
+
+
+
+    <div id="contact" class="block -orange edge--both">
+  <div class="container">
+<div class="row">
+  <div class="col-12 pt-5">
+    <section id="contact ">
+      <div  class="text-center text-white">
+        <h1 class="pb-5">Connect with us</h1>
+         
+         <div class="socials">
+           <ul class="list-inline">
+             <li class="list-inline-item"><a target="_blank"  href="tel:+00000000000"><i class="fa fa-mobile" aria-hidden="true"></i></a> </li>
+             <li class="list-inline-item"><a target="_blank"  href="https://web.facebook.com/INNIT-CREW-1607165869555419?_rdc=1&_rdr"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+             <li class="list-inline-item"><a target="_blank"  href="https://twitter.com/innit_crew"><i class="fa fa-twitter-square" aria-hidden="true"></i></a> </li>
+             <li class="list-inline-item"><a target="_blank"  href="https://www.instagram.com/innitcrew/"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+             <li class="list-inline-item"><a target="_blank"  href="innitcrew@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </li>
+             <li class="list-inline-item"><a target="_blank"  href="https://www.youtube.com/channel/UCVht70QKSpcM1oobLlRlHVA?view_as=subscriber"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </li>
+            
+           </ul>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="list-inline text-center pt-5"> <a href="#home"><i class="fa fa-arrow-up text-dark" aria-hidden="true"><br> <small> Move To Top</small></i></a> </div>
+
+<footer class="bg-dark text-center">
+  <hr> 
+  <h5><small class="text-white ">@2020 Innit Crew, All rights reserved</small></h5>
+</footer>
+</body> 
+<script src="./bootstrap.bundle.min.js"></script>
+  <script src="./jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="jquery-1.10.2.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+ 
+</html>
