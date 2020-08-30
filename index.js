@@ -6,7 +6,7 @@ $(function () {
 
 // Slider
 
-$(function () {
+$(document).ready(function () {
   var noOfProduct = $("#main ul li").length;
   var totalProductWidth = 0;
   for (var i = 0; i < noOfProduct; i++) {
