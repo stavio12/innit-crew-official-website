@@ -1,13 +1,12 @@
 body {
-  background: rgb(240, 240, 240);
-  background: linear-gradient(90deg, rgba(240, 240, 240, 0.8071428400461748) 100%, rgba(255, 255, 255, 1) 100%);
-
+  background: rgb(225,225,225);
+  background: linear-gradient(50deg, rgba(225,225,225,1) 0%, rgba(234,236,235,1) 36%, rgba(251,251,252,1) 100%);
   font-family: "Roboto", sans-serif;
 }
 
 #home {
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3981792546120011) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%), url("./gorl.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3981792546120011) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%), url("./kid.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -22,10 +21,7 @@ a:hover {
   margin-top: 18em;
 }
 
-.carousel {
-  width: 640px;
-  height: 360px;
-}
+
 
 .logo {
   width: 3em;
@@ -83,7 +79,9 @@ a:hover {
 }
 
 .card {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  background: rgb(225,225,225);
+  background: linear-gradient(40deg, rgba(225,225,225,1) 0%, rgba(234,236,235,1) 36%, rgba(251,251,252,1) 100%);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .text {
@@ -138,7 +136,8 @@ a:hover {
 }
 
 .-blue {
-  background: rgb(222, 206, 83);
+  background: rgb(255,221,0);
+background: linear-gradient(90deg, rgba(255,221,0,1) 1%, rgba(254,204,38,1) 23%, rgba(251,176,52,1) 71%); 
 }
 
 .edge--both {
@@ -172,8 +171,8 @@ a:hover {
 }
 
 .-orange {
-  background: rgb(222, 206, 83);
-}
+  background: rgb(255,221,0);
+  background: linear-gradient(90deg, rgba(255,221,0,1) 1%, rgba(254,204,38,1) 23%, rgba(251,176,52,1) 71%);}
 
 #main {
   /* height: 80%; */
@@ -190,7 +189,7 @@ a:hover {
 
 #slider li {
   display: inline;
-  margin: 0px 30px;
+  margin: 0px 55px;
  
 }
 
