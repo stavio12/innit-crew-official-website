@@ -6,7 +6,7 @@ body {
 
 #home {
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3981792546120011) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%), url("./wood.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3981792546120011) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%), url("./kid.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -50,7 +50,7 @@ a:hover {
 #donate:hover {
   background: rgb(255, 221, 0);
   background: linear-gradient(90deg, rgba(255, 221, 0, 1) 1%, rgba(254, 204, 38, 1) 23%, rgba(251, 176, 52, 1) 71%);
-}
+ }
 
 .event-image:hover {
   cursor: pointer;
