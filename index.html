@@ -357,12 +357,12 @@
 </body> 
 
    <script>
-      document.body.className += "js-loading";
+      document.querySelector("#home").className += "js-loading";
 
       window.addEventListener("load", showPage, false);
 
       function showPage() {
-        document.body.className = document.body.className.replace("js-loading", "");
+        document.querySelector("#home").className = document.querySelector("#home").className.replace("js-loading", "");
       }
     </script>
 
