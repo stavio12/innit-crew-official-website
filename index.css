@@ -1,6 +1,6 @@
 body {
-  background: rgb(225,225,225);
-  background: linear-gradient(50deg, rgba(225,225,225,1) 0%, rgba(234,236,235,1) 36%, rgba(251,251,252,1) 100%);
+  background: rgb(225, 225, 225);
+  background: linear-gradient(50deg, rgba(225, 225, 225, 1) 0%, rgba(234, 236, 235, 1) 36%, rgba(251, 251, 252, 1) 100%);
   font-family: "Roboto", sans-serif;
 }
 
@@ -20,8 +20,6 @@ a:hover {
 #contact {
   margin-top: 18em;
 }
-
-
 
 .logo {
   width: 3em;
@@ -50,8 +48,9 @@ a:hover {
 }
 
 #donate:hover {
-  background-color: #c8b732;
-}
+  background: rgb(255, 221, 0);
+  background: linear-gradient(90deg, rgba(255, 221, 0, 1) 1%, rgba(254, 204, 38, 1) 23%, rgba(251, 176, 52, 1) 71%);
+ }
 
 .event-image:hover {
   cursor: pointer;
@@ -59,9 +58,9 @@ a:hover {
 
 .btn {
   border: 2px solid #c8b732;
-  background: rgb(255,221,0);
-background: linear-gradient(90deg, rgba(255,221,0,1) 1%, rgba(254,204,38,1) 23%, rgba(251,176,52,1) 71%); 
-border-radius: 15px;
+  background: rgb(255, 221, 0);
+  background: linear-gradient(90deg, rgba(255, 221, 0, 1) 1%, rgba(254, 204, 38, 1) 23%, rgba(251, 176, 52, 1) 71%);
+  border-radius: 15px;
   height: 2.5em;
   color: white;
 }
@@ -80,9 +79,9 @@ border-radius: 15px;
 }
 
 .card {
-  background: rgb(225,225,225);
-  background: linear-gradient(40deg, rgba(225,225,225,1) 0%, rgba(234,236,235,1) 36%, rgba(251,251,252,1) 100%);
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  background: rgb(225, 225, 225);
+  background: linear-gradient(40deg, rgba(225, 225, 225, 1) 0%, rgba(234, 236, 235, 1) 36%, rgba(251, 251, 252, 1) 100%);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .text {
@@ -137,8 +136,8 @@ border-radius: 15px;
 }
 
 .-blue {
-  background: rgb(255,221,0);
-background: linear-gradient(90deg, rgba(255,221,0,1) 1%, rgba(254,204,38,1) 23%, rgba(251,176,52,1) 71%); 
+  background: rgb(255, 221, 0);
+  background: linear-gradient(90deg, rgba(255, 221, 0, 1) 1%, rgba(254, 204, 38, 1) 23%, rgba(251, 176, 52, 1) 71%);
 }
 
 .edge--both {
@@ -172,8 +171,9 @@ background: linear-gradient(90deg, rgba(255,221,0,1) 1%, rgba(254,204,38,1) 23%,
 }
 
 .-orange {
-  background: rgb(255,221,0);
-  background: linear-gradient(90deg, rgba(255,221,0,1) 1%, rgba(254,204,38,1) 23%, rgba(251,176,52,1) 71%);}
+  background: rgb(255, 221, 0);
+  background: linear-gradient(90deg, rgba(255, 221, 0, 1) 1%, rgba(254, 204, 38, 1) 23%, rgba(251, 176, 52, 1) 71%);
+}
 
 #main {
   /* height: 80%; */
@@ -182,7 +182,7 @@ background: linear-gradient(90deg, rgba(255,221,0,1) 1%, rgba(254,204,38,1) 23%,
   overflow: hidden;
 }
 #slider {
-  white-space:nowrap; 
+  white-space: nowrap;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -191,7 +191,6 @@ background: linear-gradient(90deg, rgba(255,221,0,1) 1%, rgba(254,204,38,1) 23%,
 #slider li {
   display: inline;
   margin: 0px 55px;
- 
 }
 
 /* Payment Count down */
