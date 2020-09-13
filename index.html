@@ -355,6 +355,17 @@
   <h5><small class="text-white ">@2020 Innit Crew, All rights reserved</small></h5>
 </footer>
 </body> 
+
+   <script>
+      document.body.className += "js-loading";
+
+      window.addEventListener("load", showPage, false);
+
+      function showPage() {
+        document.body.className = document.body.className.replace("js-loading", "");
+      }
+    </script>
+
   <script src="./jquery-3.4.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="./bootstrap.bundle.min.js"></script>
