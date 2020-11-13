@@ -16,6 +16,8 @@ body {
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.3981792546120011) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%, rgba(0, 0, 0, 0.202100823239452) 100%), url("./wood.jpg");
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 85vh;
   height: auto;
