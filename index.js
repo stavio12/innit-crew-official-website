@@ -2,8 +2,6 @@ $(function () {
   var scroll = new SmoothScroll('a[href*="#"]');
 });
 
-
-
 // Slider
 
 $(document).ready(function () {
@@ -53,26 +51,29 @@ $(document).ready(function () {
   );
 
   $(".notifyBtn").on("click", function () {
-    $("#wait-list").css({"display": "block"});
+    $("#wait-list").css({ display: "block" });
   });
 });
 
 // Payment Count down
 
-let count = new Date("december 16,2020 00:01:00").getTime();
+let count = new Date("december 26,2020 00:01:00").getTime();
 let x = setInterval(function () {
   let now = new Date().getTime();
   let d = count - now;
 
   let days = Math.floor(d / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((d % (1000 * 60)) / 1000);
+  // let days = Math.floor(d / (1000 * 60 * 60 * 24));
+  // let hours = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  // let minutes = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
+  // let seconds = Math.floor((d % (1000 * 60)) / 1000);
 
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+  document.getElementById("eventDays").innerHTML = days;
+
+  // document.getElementById("days").innerHTML = days;
+  // document.getElementById("hours").innerHTML = hours;
+  // document.getElementById("minutes").innerHTML = minutes;
+  // document.getElementById("seconds").innerHTML = seconds;
 
   if (d <= 0) {
     clearInterval(x);
