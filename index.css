@@ -257,3 +257,24 @@ a:hover {
   border-radius: 20px;
   background-image: linear-gradient(to right, #33ccff, #00ff99 100%);
 }
+.container {
+  max-width: 1300px;
+  margin: 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-sm-6 {
+  flex-basis: 50%;
+}
+.col-sm-6 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+.col-sm-6 h6 {
+  font-size: 26px;
+  margin: 25px 0;
+}
