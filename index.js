@@ -57,7 +57,7 @@ $(document).ready(function () {
 
 // Payment Count down
 
-let count = new Date("december 26,2020 00:01:00").getTime();
+let count = new Date("december 27,2020 00:01:00").getTime();
 let x = setInterval(function () {
   let now = new Date().getTime();
   let d = count - now;
